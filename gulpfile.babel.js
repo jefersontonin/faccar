@@ -148,8 +148,8 @@ function images() {
 
 // Copy fonts to "dist" folder
 function fonts() {
-  return gulp.src('src/assets/scss/fonts/**/*')
-      .pipe(gulp.dest(PATHS.dist + '/assets/css/fonts'));
+  return gulp.src('src/assets/fonts/**/*')
+    .pipe(gulp.dest(PATHS.dist + '/assets/fonts'));
 }
 
 // Start a server with BrowserSync to preview the site in
@@ -175,6 +175,6 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  gulp.watch('src/assets/scss/fonts/**/*').on('all', gulp.series(fonts, browser.reload));
+  gulp.watch('src/assets/fonts/**/*').on('all', gulp.series(fonts, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
