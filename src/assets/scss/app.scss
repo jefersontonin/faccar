@@ -2,26 +2,26 @@
 
 // FONTS
 @font-face {
-  font-family: 'Brandon Regular';
-  src: url("/assets/fonts/Brandon_reg.otf") format("truetype");
+  font-family: "BeauSans Regular";
+  src: url("/assets/fonts/PFBeauSansPro-Regular.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Brandon Bold";
-  src: url("/assets/fonts/Brandon_bld.otf") format("truetype");
+  font-family: "BeauSans Bold";
+  src: url("/assets/fonts/PFBeauSansPro-Bold.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Brandon Light";
-  src: url("/assets/fonts/Brandon_light.otf") format("truetype");
+  font-family: "BeauSans Light";
+  src: url("/assets/fonts/PFBeauSansPro-Light.otf") format("truetype");
 }
 
 @font-face {
-  font-family: "Brandon Medium";
-  src: url("/assets/fonts/Brandon_med.otf") format("truetype");
+  font-family: "BeauSans Bold Italic";
+  src: url("/assets/fonts/PFBeauSansPro-BoldItalic.otf") format("truetype");
 }
 
-$family-sans-serif: "Brandon Regular";
+$family-sans-serif: "BeauSans Regular";
 
 .background {
   background-image: url("/assets/img/hope-8.jpg");

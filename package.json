@@ -1,7 +1,7 @@
 {
-  "name": "bulma-template",
+  "name": "faccar",
   "version": "1.0.0",
-  "description": "Bulma start template",
+  "description": "Faccar Landing Page",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
