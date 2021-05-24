@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Faccar</title>
-  <link rel="stylesheet" href="/assets/css/app.css">
+  <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/app.css" type="text/css">
 </head>
 <body>
 
@@ -51,25 +52,45 @@
         </div>
         <div class="hero-footer">
           <div class="container">
-            <div class="columns is-centered">
-              <div class="column is-one-third modality modality--1">
-                <div class="modality--header">
-                  <p class="title has-text-white is-uppercase">Educação<br> Presencial</p>
-                </div>
-                <div class="modality--body">
-                  <span class="tag">Links Rápidos</span>
-                  <ul class="mt-3">
-                    <li>
-                      <a href="#" class="is-uppercase has-text-white is-size-4">Graduação</a>
-                    </li>
-                    <li>
-                      <a href="#" class="is-uppercase has-text-white is-size-4">Pós-Graduação</a>
-                    </li>
-                  </ul>
+            <div class="columns is-centered is-gapless">
+              <div class="column is-one-third">
+                <div class="modality modality--1">
+                  <div class="modality--header">
+                    <p class="title has-text-white is-uppercase is-pulled-left">Educação<br> Presencial</p>
+                    <span class="is-pulled-right">icon</span>
+                  </div>
+                  <div class="modality--body">
+                    <span class="tag is-success">Links Rápidos</span>
+                    <ul class="mt-3">
+                      <li>
+                        <span class="icon has-text-white">
+                          <i class="fas fa-chevron-circle-right"></i>
+                        </span>
+                        <a href="#" class="is-uppercase has-text-white is-size-4">Graduação</a>
+                      </li>
+                      <li>
+                        <a href="#" class="is-uppercase has-text-white is-size-4">Pós-Graduação</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="column is-one-third modality modality--2"></div>
-              <div class="column is-one-third modality modality--3"></div>
+              <div class="column is-one-third">
+                <div class="modality modality--2">
+                  <div class="modality--header">
+                    <p class="title has-text-white is-uppercase is-pulled-left">Educação<br> Semipresencial</p>
+                    <span class="is-pulled-right">icon</span>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-one-third">
+                <div class="modality modality--3">
+                  <div class="modality--header">
+                    <p class="title has-text-white is-uppercase is-pulled-left">Educação<br>a Distância</p>
+                    <span class="is-pulled-right">icon</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -104,7 +125,9 @@
   }
   });
   </script>
+  
 
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js" type="text/javascript"></script>
+  <script type="text/javascript" src="../../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
 </body>
 </html>
