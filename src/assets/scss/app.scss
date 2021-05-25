@@ -41,7 +41,11 @@ $navbar-item-img-max-height: 5rem;
 $primary: #0E3192;
 
 .hero-head {
-  padding-top: 5rem;
+  padding-top: 3rem;
+}
+
+.hero {
+  overflow: hidden;
 }
 
 .modality {
@@ -71,6 +75,30 @@ $primary: #0E3192;
   }
   &:hover {
     transform: translateY(0px);
+  }
+}
+
+.modality--mobile {
+  height: 5rem;
+  padding: 1rem;
+  &--header {
+    padding-top: 1rem;
+    width: 100%;
+    min-height: 40%;
+  }
+  &__body {
+    padding-top: 2rem;
+    width: 100%;
+    min-height: 60%;
+  }
+  &__1 {
+    background-color: rgba(9, 31, 93, 0.8) !important;
+  }
+  &__2 {
+    background-color: rgba(14, 49, 146, 0.8) !important;
+  }
+  &__3 {
+    background-color: rgba(18, 62, 186, 0.8) !important;
   }
 }
 
