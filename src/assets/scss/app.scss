@@ -23,7 +23,7 @@
 
 $family-sans-serif: "BeauSans Regular";
 
-.background {
+.has-background-image {
   background-image: url("/assets/img/hero-bg.jpg");
   background-size: cover;
   background-position: bottom center;
@@ -33,10 +33,6 @@ $navbar-height: 8rem;
 $navbar-item-img-max-height: 5rem;
 // COLORS
 $primary: #0E3192;
-
-.hero-head {
-  padding-top: 3rem;
-}
 
 .wrapper {
   width: 100%;
@@ -125,6 +121,11 @@ $primary: #0E3192;
     animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+$spacing-shortcuts: ("margin": "mg");
+$spacing-horizontal: "h";
+$spacing-vertical: null;
+$spacing-values: ("small": 10px, "medium": 30px, "large": 200px);
 
 // IMPORTS
 @import "../../../node_modules/bulma/bulma.sass";
