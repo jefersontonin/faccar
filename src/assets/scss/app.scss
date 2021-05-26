@@ -26,7 +26,7 @@ $family-sans-serif: "BeauSans Regular";
 .background {
   background-image: url("/assets/img/hero-bg.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
 }
 
 .wrapper {
@@ -44,8 +44,20 @@ $primary: #0E3192;
   padding-top: 3rem;
 }
 
-.hero {
+.is-fullscreen {
+  width: 100%;
+  min-height: 100vh;
   overflow: hidden;
+  top: 0;
+  bottom: 0;
+  outline: 1px red solid;
+}
+
+.desktop-menu-container {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
 }
 
 .modality {
