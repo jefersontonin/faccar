@@ -29,10 +29,23 @@ $family-sans-serif: "BeauSans Regular";
   background-position: bottom center;
 }
 
-$navbar-height: 8rem;
-$navbar-item-img-max-height: 5rem;
 // COLORS
 $primary: #0E3192;
+
+// NAVBAR
+$navbar-height: 8rem;
+$navbar-item-img-max-height: 5rem;
+$navbar-burger-color: $primary;
+$navbar-background-color: #D0DCFB;
+
+.navbar-burger:hover {
+  background-color: #D0DCFB !important;
+}
+
+.navbar-burger span {
+  height: 2px !important;
+  color: #0E3192;
+}
 
 .wrapper {
   width: 100%;
