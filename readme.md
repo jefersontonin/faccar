@@ -13,4 +13,4 @@ To build:
 Deploy the 'dist' folder
 ------------------------------------------------------------
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6a6f39ff-f6a4-4fcf-9171-675a623719c2/deploy-status)](https://app.netlify.com/sites/vestibularfaccar/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f4c46c4-b91e-4210-baa1-2afa86a026d0/deploy-status)](https://app.netlify.com/sites/vestibularfaccar/deploys)
