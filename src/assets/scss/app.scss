@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 // FONTS
+$family-sans-serif: "BeauSans Regular";
+
 @font-face {
   font-family: "BeauSans Regular";
   src: url("/assets/fonts/PFBeauSansPro-Regular.otf") format("truetype");
@@ -19,14 +21,6 @@
 @font-face {
   font-family: "BeauSans Bold Italic";
   src: url("/assets/fonts/PFBeauSansPro-BoldItalic.otf") format("truetype");
-}
-
-$family-sans-serif: "BeauSans Regular";
-
-.has-background-image {
-  background-image: url("/assets/img/hero-bg.jpg");
-  background-size: cover;
-  background-position: bottom center;
 }
 
 // COLORS
@@ -49,38 +43,63 @@ $navbar-background-color: #D0DCFB;
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  @media only screen and (min-width: 769px) {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .is-fullscreen {
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  outline: 1px red solid;
+  height: 1300px;
+  @media only screen and (min-width: 769px) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.has-background-image {
+  background-image: url("/assets/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: bottom right;
 }
 
 .desktop-menu-container {
   width: 100%;
   position: absolute;
   z-index: 10;
-  bottom: 0;
+  bottom: 4rem;
+  @media only screen and (min-width: 769px) {
+    bottom: 0;
+  }
 }
 
 .modality {
-  height: 24rem;
+  height: auto;
   padding: 1rem;
-  transform: translateY(13rem);
-  will-change: transform;
-  transition: transform ease-in-out 400ms;
+  @media only screen and (min-width: 769px) {
+    height: 24rem;
+    transform: translateY(15rem);
+    will-change: transform;
+    transition: transform ease-in-out 400ms;
+  }
   &--header {
     padding-top: 1rem;
     width: 100%;
     min-height: 40%;
+    @media only screen and (min-width: 769px) {
+    }
   }
   &--body {
-    padding-top: 2rem;
+    padding-top: 1rem;
     width: 100%;
-    min-height: 60%;
+    min-height: 10%;
+  }
+  &--footer {
+    padding-top: 1rem;
+    width: 100%;
+    min-height: 50%;
   }
   &--1 {
     background-color: rgba(9, 31, 93, 0.8) !important;
@@ -92,7 +111,7 @@ $navbar-background-color: #D0DCFB;
     background-color: rgba(18, 62, 186, 0.8) !important;
   }
   &:hover {
-    transform: translateY(0px);
+    transform: translateY(6rem);
   }
 }
 
