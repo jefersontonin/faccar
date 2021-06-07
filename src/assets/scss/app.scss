@@ -115,6 +115,13 @@ $navbar-background-color: #D0DCFB;
   }
 }
 
+.sign-up-button {
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .modality--mobile {
   height: 5rem;
   padding: 1rem;
