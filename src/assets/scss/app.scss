@@ -60,9 +60,16 @@ $navbar-background-color: #D0DCFB;
 }
 
 .has-background-image {
-  background-image: url("/assets/img/hero-bg.jpg");
+  background-image: url("/assets/img/hero-bg-2022-mobile.jpg");
+  @media only screen and (min-width: 769px) {
+    background-image: url("/assets/img/hero-bg-2022.jpg");
+    background-position: top center;
+  }
   background-size: cover;
-  background-position: bottom right;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
+  background-position: top left;
 }
 
 .desktop-menu-container {
@@ -110,8 +117,10 @@ $navbar-background-color: #D0DCFB;
   &--3 {
     background-color: rgba(18, 62, 186, 0.8) !important;
   }
-  &:hover {
-    transform: translateY(6rem);
+  @media only screen and (min-width: 769px) {
+    &:hover {
+      transform: translateY(6rem);
+    }
   }
 }
 
@@ -164,7 +173,7 @@ $navbar-background-color: #D0DCFB;
 $spacing-shortcuts: ("margin": "mg");
 $spacing-horizontal: "h";
 $spacing-vertical: null;
-$spacing-values: ("small": 10px, "medium": 30px, "large": 200px);
+$spacing-values: ("small": 10px, "medium": 30px, "large": 180px);
 
 // IMPORTS
 @import "../../../node_modules/bulma/bulma.sass";
